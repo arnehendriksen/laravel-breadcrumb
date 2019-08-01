@@ -19,7 +19,7 @@ class Breadcrumb
         return $this->items;
     }
 
-    public function add($title, $href = '#')
+    public function add($title, $href = null)
     {
         $this->items[] = [
             'title' => $title,
