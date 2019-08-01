@@ -1,0 +1,14 @@
+{
+    "name": "arnehendriksen/laravel-breadcrumb",
+    "authors": [
+        {
+            "name": "Arne Hendriksen",
+            "email": "arne.hendriksen@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+      "psr-4": { "arnehendriksen\\LaravelBreadcrumb\\" : "src/" }
+    }
+}
