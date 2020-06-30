@@ -9,8 +9,6 @@ class BreadcrumbServiceProvider extends ServiceProvider implements DeferrablePro
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
     public function register()
     {
@@ -21,8 +19,6 @@ class BreadcrumbServiceProvider extends ServiceProvider implements DeferrablePro
 
     /**
      * Get the services provided by the provider.
-     *
-     * @return array
      */
     public function provides()
     {
