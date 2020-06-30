@@ -1,34 +1,22 @@
-<?php namespace arnehendriksen\LaravelBreadcrumb;
+<?php
 
+namespace ArneHendriksen\LaravelBreadcrumb;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-class BreadcrumbServiceProvider extends ServiceProvider
+class BreadcrumbServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-
     /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
-
-    /**
-     * Bootstrap the application events.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-    }
-
-    /**
-     * Register the service provider.
+     * Register any application services.
      *
      * @return void
      */
     public function register()
     {
-        return new Breadcrumb();
+        $this->app->singleton('breadcrumb', function ($app) {
+            return new Breadcrumb();
+        });
     }
 
     /**
@@ -38,5 +26,8 @@ class BreadcrumbServiceProvider extends ServiceProvider
      */
     public function provides()
     {
+        return [
+            'breadcrumb',
+        ];
     }
 }

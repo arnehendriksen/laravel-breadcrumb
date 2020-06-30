@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {},
     "autoload": {
-      "psr-4": { "arnehendriksen\\LaravelBreadcrumb\\" : "src/" }
+        "psr-4": {
+            "ArneHendriksen\\LaravelBreadcrumb\\" : "src/"
+        }
     }
 }

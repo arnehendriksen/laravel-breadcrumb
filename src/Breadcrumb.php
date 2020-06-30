@@ -1,4 +1,6 @@
-<?php namespace arnehendriksen\LaravelBreadcrumb;
+<?php
+
+namespace ArneHendriksen\LaravelBreadcrumb;
 
 class Breadcrumb
 {
