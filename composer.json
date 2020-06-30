@@ -12,5 +12,15 @@
         "psr-4": {
             "ArneHendriksen\\LaravelBreadcrumb\\" : "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArneHendriksen\\LaravelBreadcrumb\\BreadcrumbServiceProvider"
+            ],
+            "aliases": {
+                "Breadcrumb": "ArneHendriksen\\LaravelBreadcrumb\\Facades\\Breadcrumb"
+            }
+        }
     }
 }
